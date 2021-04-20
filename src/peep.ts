@@ -12,6 +12,6 @@ export class Peep {
 	}
 
 	getTimeStamp() {
-		return new Date(this.date).toString();
+		return new Date(this.date).toLocaleString();
 	}
 }
