@@ -1,11 +1,17 @@
 export class Peep {
-    body: string
+	body: string;
+	date: Date;
 
-    constructor(body: string) {
-        this.body = body
-    }
+	constructor(body: string, date?: Date) {
+		this.body = body;
+		this.date = Date.now;
+	}
 
-    getBody() {
-        return this.body
-    }
+	getBody() {
+		return this.body
+	}
+
+	getTimeStamp() {
+		return new Date(this.date);
+	}
 }
