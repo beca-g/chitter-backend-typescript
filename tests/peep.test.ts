@@ -3,11 +3,11 @@ import { expect } from 'chai'
 
 describe('peep', () => {
     let peep: Peep 
-    let date: Date;
+    let date: String;
     
     beforeEach(() => {
-        peep = new Peep("Hello")
-        date = new Date("April 20, 2021 12:00:00");
+        peep = new Peep("Hello", 1618933497553)
+        date = "Tue Apr 20 2021 16:44:57 GMT+0100 (British Summer Time)"
     })
 
     it('should have a body of text', () => {

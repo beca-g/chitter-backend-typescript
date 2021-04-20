@@ -1,10 +1,10 @@
 export class Peep {
 	body: string;
-	date: Date;
+	date: number;
 
-	constructor(body: string, date?: Date) {
+	constructor(body: string, date: number = Date.now()) {
 		this.body = body;
-		this.date = Date.now;
+		this.date = date;
 	}
 
 	getBody() {
@@ -12,6 +12,6 @@ export class Peep {
 	}
 
 	getTimeStamp() {
-		return new Date(this.date);
+		return new Date(this.date).toString();
 	}
 }
