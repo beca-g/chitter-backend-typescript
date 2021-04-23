@@ -1,6 +1,27 @@
 Chitter
 ========
 
+## Getting started
+
+### Setup 
+From the command line run the following:
+```
+git clone git@github.com:beca-g/chitter-typescript.git
+cd chitter-typescript
+```
+
+### Install dependencies  
+```
+npm install
+```
+
+### To run tests
+```
+npm run test
+```
+
+## Specification
+
 ## User Stories
 ```
 As a Maker
