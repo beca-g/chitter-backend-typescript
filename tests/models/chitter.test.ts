@@ -1,4 +1,4 @@
-import { Chitter } from "../src/models/chitter"
+import { Chitter } from "../../src/models/chitter"
 import { expect } from "chai"
 
 describe("Chitter", () => {

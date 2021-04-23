@@ -1,7 +1,7 @@
-import { Peep } from '../src/models/peep'
+import { Peep } from '../../src/models/peep'
 import { expect } from 'chai'
 
-describe('peep', () => {
+describe('Peep', () => {
   let peep: Peep 
   let date: String;
   
