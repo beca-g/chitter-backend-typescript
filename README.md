@@ -17,8 +17,20 @@ npm install
 
 ### To run tests
 ```
-npm run test
+npm run coverage
 ```
+
+### To compile
+```
+npx tsc
+```
+
+### To run the server  
+(this will be removed once deployed)  
+```
+npm run start
+```
+
 
 ## Specification
 
