@@ -1,5 +1,4 @@
 import { Chitter } from "../src/models/chitter"
-import { Peep } from '../src/models/peep'
 import { expect } from "chai"
 
 describe("Chitter", () => {
@@ -13,7 +12,7 @@ describe("Chitter", () => {
     it("should show all peeps", () => {
       chitter.createPeep("Peep")
       chitter.createPeep("Peeper")
-      expect(chitter.getAllPeeps()[1].body).to.equal("Peeper")
+      expect(chitter.getAllPeeps().length).to.equal(2)
     })
   })
 
