@@ -4,7 +4,7 @@ export class Chitter {
   peeps: Peep[]
 
   constructor() {
-    this.peeps = [ new Peep("OMG we so clever"), new Peep("amazing")]
+    this.peeps = []
   }
   getAllPeeps() {
     return this.peeps
