@@ -4,7 +4,7 @@ import { expect } from 'chai'
 describe('peep', () => {
   let peep: Peep 
   let date: String;
-    
+  
   beforeEach(() => {
     peep = new Peep("Hello", 1618933497553)
     date = "20/04/2021, 16:44:57"
