@@ -5,7 +5,7 @@ export default function createServer() {
     const app: Application = express();
 
     app.get('/', (req: Request, res: Response, next: NextFunction) => {
-        res.send("hello world");
+        res.send();
     })
 
     app.use(routes);

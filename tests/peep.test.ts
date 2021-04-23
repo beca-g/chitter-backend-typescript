@@ -1,4 +1,4 @@
-import { Peep } from '../src/peep'
+import { Peep } from '../src/models/peep'
 import { expect } from 'chai'
 
 describe('peep', () => {

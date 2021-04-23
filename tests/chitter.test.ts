@@ -1,5 +1,5 @@
-import { Chitter } from "../src/chitter"
-import { Peep } from '../src/peep'
+import { Chitter } from "../src/models/chitter"
+import { Peep } from '../src/models/peep'
 import { expect } from "chai"
 
 describe("Chitter", () => {
