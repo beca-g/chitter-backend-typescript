@@ -7,11 +7,11 @@ export class Peep {
 		this.date = date;
 	}
 
-	getBody() {
+	getBody(): string {
 		return this.body
 	}
 
-	getTimeStamp() {
+	getTimeStamp(): string {
 		return new Date(this.date).toLocaleString();
 	}
 }
