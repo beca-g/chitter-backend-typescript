@@ -6,11 +6,11 @@ export class Chitter {
   constructor() {
     this.peeps = []
   }
-  getAllPeeps() {
+  getAllPeeps(): Peep[] {
     return this.peeps
   }
 
-  createPeep(body: string) {
+  createPeep(body: string): number {
     return this.peeps.push(new Peep(body))
   }
 }
