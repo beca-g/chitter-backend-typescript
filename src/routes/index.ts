@@ -1,8 +1,8 @@
-import { Router } from 'express';
-import chitter from './chitter';
+import { Router } from "express";
+import chitterRouter from "./chitter";
 
 const router = Router();
 
-router.use('/chitter', chitter);
+router.use("/chitter", chitterRouter);
 
 export default router;
