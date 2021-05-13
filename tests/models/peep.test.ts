@@ -1,7 +1,7 @@
-import { Peep } from '../../src/models/peep'
-import { expect } from 'chai'
+import { Peep } from "../../src/models/peep"
+import { expect } from "chai"
 
-describe('Peep', () => {
+describe("Peep", () => {
   let peep: Peep 
   let date: string;
   let id:  number;
@@ -13,7 +13,7 @@ describe('Peep', () => {
   })
 
   describe("#getBody", () => {
-    it('should have a body of text', () => {
+    it("should have a body of text", () => {
       expect(peep.getBody()).to.equal("Hello")
     })
   })
