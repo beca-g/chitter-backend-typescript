@@ -6,6 +6,7 @@ export class Chitter {
   constructor() {
     this.peeps = []
   }
+  
   getAllPeeps(): Peep[] {
     return this.peeps
   }
