@@ -1,16 +1,24 @@
-import { Router, Request, Response } from 'express';
-import { Chitter } from '../models/chitter'
+import express, { Router, Request, Response } from "express";
+import { ChitterController } from "../controllers/chitter/chitter";
 
-const router = Router();
-let chitter = new Chitter();
+const router = Router({});
 
-// @route GET /dashboard
-// @desc Authenticate a user
-// @access PUBLIC
+router.use(express.json());
+router.use(express.urlencoded({ extended: false }))
 
-router.get('/', (req: Request, res: Response) => {
-    // res.send(200);
-    res.send(chitter.getAllPeeps());
+const chitterController = new ChitterController();
+
+router.get("/", (req: Request, res: Response) => {
+	return res.status(200).send(chitterController.read());
+});
+
+router.post("/", (req: Request, res: Response) => {
+	console.log("POST ROUTE REACHED")
+	const peep = req.body.body
+	console.log("body is", peep);
+	chitterController.create(peep)
+	res.send(req.body)
 });
 
 export default router;
+
