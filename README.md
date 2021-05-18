@@ -69,6 +69,9 @@ So that I can stay constantly tapped in to the shouty box of Chitter
 I want to receive an email if I am tagged in a Peep
 ```
 
+## Diagram 
+![Imgur](https://imgur.com/VLlS1VS.png)
+
 ## Tech
 * Typescript
 * mocha/chai
