@@ -16,9 +16,8 @@ router.post("/", (req: Request, res: Response) => {
 	console.log("POST ROUTE REACHED")
 	const peep = req.body.body
 	console.log("body is", peep);
-	chitterController.create(peep)
+	chitterController.createPeep(peep)
 	res.send(req.body)
 });
 
 export default router;
-

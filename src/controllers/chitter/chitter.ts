@@ -5,7 +5,7 @@ const chitter = new Chitter();
 
 export class ChitterController  {
 
-  create(peep: string): number {
+  createPeep(peep: string): number {
     return chitter.createPeep(peep)
   }
 
