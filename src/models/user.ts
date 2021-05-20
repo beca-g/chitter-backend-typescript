@@ -14,4 +14,16 @@ export class User {
   getUsername(): string {
     return this.username;
   }
+
+  getEmail(): string {
+    return this.email;
+  }
+
+  getPassword(): string {
+    return this.password;
+  }
+
+  getId(): number {
+    return this.id;
+  }
 }
