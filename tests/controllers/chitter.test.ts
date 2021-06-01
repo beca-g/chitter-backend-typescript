@@ -14,4 +14,11 @@ describe("ChitterController", () => {
       expect(chitterController.readPeeps().length).to.equal(1);
     })
   });
+
+  describe("createUser", () => {
+    it("should add a new user to the users array in the chitter model", () => {
+      chitterController.createUser("username", "email", "password");
+      expect(chitterController.readUsers().length).to.equal(1);
+    })
+  });
 });
