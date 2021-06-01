@@ -7,4 +7,11 @@ describe("ChitterController", () => {
   beforeEach(() => {
     chitterController = new ChitterController();
   });
+
+  describe("createPeep", () => {
+    it("should add a new peep to the peep array in the chitter model", () => {
+      chitterController.createPeep("Test peep");
+      expect(chitterController.readPeeps().length).to.equal(1);
+    })
+  });
 });
